@@ -1,0 +1,195 @@
+body {
+  margin: 0;
+  background-color: #00BCD4;
+}
+
+p {
+  font-family: sans-serif; /*I want Avenir*/
+  font-size: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: lighter;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+}
+
+h1 {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+}
+
+h2 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+h3 {
+  font-family: sans-serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: 0.05em;
+}
+/*hero*/
+
+.hero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  grid-area: 1 / 1 / 4 / 4;
+  z-index: -1;
+}
+
+.container {
+  grid-area: 3 / 3 / 4 / 4;
+  text-align: center;
+  z-index: 2;
+}
+/*Part about me */
+.main-body {
+  padding: 90px 20px;
+  display: grid;
+  grid-template-columns: minmax(20ch, 60ch) 1fr 1fr;
+  grid-template-rows: auto;
+  grid-column-gap: 20px;
+  text-align: center;
+}
+
+.main-body p {
+  padding: 5px;
+}
+
+.main-body img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.content-panel {
+  background-color: rgb(0, 151, 167);
+  border-style: solid;
+  border-color: white;
+  position: relative;
+}
+
+/*My hobbies -image collage*/
+
+.photo-collage {
+  display: grid;
+  grid-template-columns: 2fr 2fr 3fr;
+  grid-column-gap: 5px;
+}
+
+.photo-collage img {
+  object-fit: cover;
+  width: 100%;
+  height: 50vh;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+}
+
+/*hover over the image code*/
+.hover {
+  position: relative;
+}
+.hover .hvrbox-layer_top {
+	opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+	width: 100%;
+  height: 50vh;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	-moz-transition: all 0.4s ease-in-out 0s;
+	-webkit-transition: all 0.4s ease-in-out 0s;
+	-ms-transition: all 0.4s ease-in-out 0s;
+	transition: all 0.4s ease-in-out 0s;
+}
+.hover:hover .hvrbox-layer_top,
+.hover.active .hvrbox-layer_top {
+	opacity: 1;
+}
+.hover .text {
+	text-align: center;
+  position: absolute;
+  width: 80%;
+	font-size: 18px;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+
+.uni {
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.bjj {
+  grid-area: 1 / 2 / 2 / 4;
+}
+
+.travels {
+  grid-area: 2 / 1 / 3 / 2;
+}
+
+.books {
+  grid-area: 2 / 2 / 3 / 3;
+}
+
+.languages {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+footer button {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #222;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+#facebook:hover {
+  background-color: #3b5998;
+}
+#linkedin:hover {
+  background-color: #0077B5;
+}
+#github:hover {
+  background-color: #009688;
+}
